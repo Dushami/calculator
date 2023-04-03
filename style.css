@@ -25,7 +25,7 @@ body{
 }
 
 .calcShell{
-    width: 25vw;
+    width: 440px;
     height: 65vh;
     background-color: #4a4946;
     border-radius: 10px;
@@ -53,84 +53,100 @@ body{
 }
 
 button{
-    font-size: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ddd;
+}
+
+button:active{
+    background-color: #999
 }
 
 .buttons{
-    height: 552.5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     row-gap: 3px;
 }
 
 .topLine{
     height: 108.5px;
-    width: inherit;
+    width: 410px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #TL{
     border-radius: 10px;
-    width: 15vw;
+    width: 410px;
+    border-color: black;
 }
 
 .AC, .C{
     background-color: #faa614;
 }
 
+.AC:hover, .C:hover{
+    background-color: #e39610;
+}
+
+.AC:active, .C:active{
+    background-color: #d18502;
+}
+
 .secondLine{
     height: 108.5px;
-    width: inherit;
+    width: 410px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #SL{
     border-radius: 10px;
-    width: 15vw;
+    width: 410px;
+    border-color: black;
 }
 
 .thirdLine{
     height: 108.5px;
-    width: inherit;
+    width: 410px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #THL{
     border-radius: 10px;
-    width: 15vw;
+    width: 410px;
+    border-color: black;
 }
 
 .fourthLine{
     height: 108.5px;
-    width: inherit;
+    width: 410px;
     display: flex;
-    justify-content: space-between;
-}
-
-.equals{
-    height: 219px;
-    background-color: #faa614;
+    justify-content: center;
 }
 
 #FL{
     border-radius: 10px;
-    width: 15vw;
+    width: 410px;
+    border-color: black;
 }
 
 .fifthLine{
     height: 108.5px;
-    width: inherit;
+    width: 410px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 #FThL{
     border-radius: 10px;
-    width: 17.5vw;  
+    width: 410px;
+    border-color: black;
 }
 
 .info{
