@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header{
+    margin-top: 5px;
+    color: #fe5f55;
+    font-size: 85px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+.calcShell{
+    width: 25vw;
+    height: 65vh;
+    background-color: #4a4946;
+    border-radius: 10px;
+}
+
+.calcContent{
+    padding: 15px;
+    height: 728.5px;
+}
+
+.display{
+    border-radius: 10px;
+    background-color: #e4e6a3;
+    height: 150px;
+    width: inherit;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.screen{
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+button{
+    font-size: 30px;
+}
+
+.buttons{
+    height: 552.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 3px;
+}
+
+.topLine{
+    height: 108.5px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#TL{
+    border-radius: 10px;
+    width: 15vw;
+}
+
+.AC, .C{
+    background-color: #faa614;
+}
+
+.secondLine{
+    height: 108.5px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#SL{
+    border-radius: 10px;
+    width: 15vw;
+}
+
+.thirdLine{
+    height: 108.5px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#THL{
+    border-radius: 10px;
+    width: 15vw;
+}
+
+.fourthLine{
+    height: 108.5px;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equals{
+    height: 219px;
+    background-color: #faa614;
+}
+
+#FL{
+    border-radius: 10px;
+    width: 15vw;
+}
+
+.fifthLine{
+    height: 108.5px;
+    width: inherit;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#FThL{
+    border-radius: 10px;
+    width: 17.5vw;  
+}
+
+.info{
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
