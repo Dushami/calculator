@@ -1,19 +1,28 @@
 //global variables
-const one = document.getElementsByClassName('1');
-const two = document.getElementsByClassName('2');
-const three = document.getElementsByClassName('3');
-const four = document.getElementsByClassName('4');
-const five = document.getElementsByClassName('5');
-const six = document.getElementsByClassName('6');
-const seven = document.getElementsByClassName('7');
-const eight = document.getElementsByClassName('8');
-const nine = document.getElementsByClassName('9');
-const zero = document.getElementsByClassName('0');
-const allClear = document.getElementsByClassName('AC');
-const clear = document.getElementsByClassName('C');
-const multiply = document.getElementsByClassName('X');
-const divide = document.getElementsByClassName('÷');
-const add = document.getElementsByClassName('+');
-const subtract = document.getElementsByClassName('-');
-const equals = document.getElementsByClassName('=');
+let firstNum = ''
+let secondNum = ''
+let operation = null
+let screenReset = false
 
+const numberButton = document.querySelectorAll('[data-number]');
+const operatorButton = document.querySelectorAll('[data-operator}');
+const allClear = document.getElementsByClassName('AC');
+const delete1 = document.getElementsByClassName('Delete');
+const equals = document.getElementsByClassName('=');
+const point = document.getElementsByClassName("point");
+const lastOperationScreen = document.getElementsByClassName('previousOperation');
+const currentOperation = document.getElementsByClassName('currentOperaion');
+
+window.addEventListener('keydown', handleKeyboardInput)
+equals.addEventListener('click', evaluate);
+delete1.addEventListener('click', deleteANo);
+point.addEventListener('click', decimal);
+allClear.addEventListener('click', clearAll);
+
+numberButton.forEach((buton) => 
+    button.addEventListener('click', () => appendNumber(button.textContent))
+);
+
+operatorButton.forEach((buton) => 
+    button.addEventListener('click', () => setOperator(button.textContent))
+);

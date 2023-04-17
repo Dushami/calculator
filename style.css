@@ -26,7 +26,7 @@ body{
 
 .calcShell{
     width: 440px;
-    height: 65vh;
+    height: 758.5px;
     background-color: #4a4946;
     border-radius: 10px;
 }
@@ -48,8 +48,17 @@ body{
 }
 
 .screen{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-right: 10px;
     font-size: 40px;
+}
+
+.previousOperation{
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 button{
@@ -85,15 +94,15 @@ button:active{
     border-color: black;
 }
 
-.AC, .C{
+.AC, .Delete{
     background-color: #faa614;
 }
 
-.AC:hover, .C:hover{
+.AC:hover, .Delete:hover{
     background-color: #e39610;
 }
 
-.AC:active, .C:active{
+.AC:active, .Delete:active{
     background-color: #d18502;
 }
 
