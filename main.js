@@ -62,3 +62,27 @@ function delete1(){
     .slice(0 , -1);
 }
 
+function setOperation(operator){
+   if(operation !== null) evaluate()
+   firstNum = currentOperationScreen.textContent
+   operation = operator
+   lastOperationScreen.textContent = `${firstNum} ${operation}`
+   shouldResetScreen = true 
+}
+
+function evaluate(){
+    if(operation === null || shouldResetScreen) return
+    if(operation === '÷' && currentOperationScreen.textContent === '0'){
+        alert("you can't devide by 0")
+        return;
+    }
+    secondNum = currentOperationScreen.textContent
+    currentOperationScreen.textContent = roundedNum(operate(operation, firstNum, secondNum))
+    lastOperationScreen.textContent = `${firstNum} ${operation} ${secondNum} =`;
+    operation = null;
+}
+
+function roundedNum(number){
+    return Math.round(number * 1000)/1000
+}
+
