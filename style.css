@@ -56,9 +56,16 @@ body{
     font-size: 40px;
 }
 
-.previousOperation{
+#previousOperation{
     font-size: 25px;
     margin-bottom: 15px;
+    min-height: 60px;
+    max-width: 385px;
+}
+
+#currentOperation{
+    display: flex;
+    max-width: 385px;
 }
 
 button{
@@ -88,21 +95,21 @@ button:active{
     justify-content: center;
 }
 
-#TL{
+.TL{
     border-radius: 10px;
     width: 410px;
     border-color: black;
 }
 
-.AC, .Delete{
+#AC, #Delete{
     background-color: #faa614;
 }
 
-.AC:hover, .Delete:hover{
+#AC:hover, #Delete:hover{
     background-color: #e39610;
 }
 
-.AC:active, .Delete:active{
+#AC:active, #Delete:active{
     background-color: #d18502;
 }
 
@@ -113,7 +120,7 @@ button:active{
     justify-content: center;
 }
 
-#SL{
+.SL{
     border-radius: 10px;
     width: 410px;
     border-color: black;
@@ -126,7 +133,7 @@ button:active{
     justify-content: center;
 }
 
-#THL{
+.THL{
     border-radius: 10px;
     width: 410px;
     border-color: black;
@@ -139,7 +146,7 @@ button:active{
     justify-content: center;
 }
 
-#FL{
+.FL{
     border-radius: 10px;
     width: 410px;
     border-color: black;
@@ -152,7 +159,7 @@ button:active{
     justify-content: center;
 }
 
-#FThL{
+.FThL{
     border-radius: 10px;
     width: 410px;
     border-color: black;
